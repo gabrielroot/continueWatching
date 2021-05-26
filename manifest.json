@@ -7,10 +7,10 @@
     "https://www.youtube.com/*"
     ],
     "icons":{
-        "128": "icone.png"
+        "128": "images/icone.png"
     },
     "content_scripts": [{
 	    "matches": ["https://www.youtube.com/*"],
-        "js": ["js.js"]
+        "js": ["js/js.js"]
     }]
 }
