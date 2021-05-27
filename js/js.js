@@ -1,8 +1,9 @@
+let p
 window.onload = ()=>{
 	const container = document.querySelector(".ytd-video-primary-info-renderer")
 	const h1 = document.querySelector("#container > h1")
 	
-	let p = document.createElement("p")
+	p = document.createElement("p")
 	p.style.color = "green"
 	p.style.fontWeight = 700
 	p.style.fontSize = "20px"
