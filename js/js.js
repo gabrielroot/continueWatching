@@ -13,12 +13,12 @@ window.onload = ()=>{
 
 console.log("Monitoramento iniciado...")
 let COUNT = 0
-const SIM_BUTTON = document.querySelector(".style-scope .yt-button-renderer .style-blue-text .size-default")
 const PLAY_BUTTON = document.querySelector("#movie_player > div.ytp-chrome-bottom > div.ytp-chrome-controls > div.ytp-left-controls > button")
 	
 setInterval(()=>{
-	const OVERLAY = document.querySelector("body > tp-yt-iron-overlay-backdrop")
-	if(OVERLAY){
+	const OVERLAY = document.querySelector("body > tp-yt-iron-overlay-backdrop") //O overlay é usado para várias coisas além da confirmação em questão
+	const SIM_BUTTON = document.querySelector(".style-scope .yt-button-renderer .style-blue-text .size-default")
+	if(SIM_BUTTON){
 		OVERLAY.click()
 
 		COUNT++
