@@ -1,5 +1,12 @@
 let p
 window.onload = ()=>{
+	const BUTTON_TORRENT = document.querySelector("#alink")
+	if(BUTTON_TORRENT ){
+		BUTTON_TORRENT.click()
+	}	
+
+	///////////////////
+
 	const container = document.querySelector(".ytd-video-primary-info-renderer")
 	const h1 = document.querySelector("#container > h1")
 	
