@@ -15,7 +15,8 @@ window.onload = ()=>{
 	p.style.fontWeight = 700
 	p.style.fontSize = "20px"
 	
-	container.insertBefore(p, h1)
+	if(container)
+		container.insertBefore(p, h1)
 }
 
 console.log("Monitoramento iniciado...")
@@ -25,7 +26,7 @@ const PLAY_BUTTON = document.querySelector("#movie_player > div.ytp-chrome-botto
 setInterval(()=>{
 	const OVERLAY = document.querySelector("body > tp-yt-iron-overlay-backdrop") //O overlay é usado para várias coisas além da confirmação em questão
 	const SIM_BUTTON = document.querySelector(".style-scope .yt-button-renderer .style-blue-text .size-default")
-	if(SIM_BUTTON){
+	if(SIM_BUTTON && OVERLAY){
 		OVERLAY.click()
 
 		COUNT++
